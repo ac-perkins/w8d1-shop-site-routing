@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='shopular'>
+    <head>
+        <meta charset='utf-8'>
+        <title></title>
+
+        <meta name='description' content=''>
+        <meta name='author' content=''>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    </head>
+    <body>
+      <main>
+        <header>
+          <h1>Who Even Knows Anymore</h1>
+          <nav>
+            <ul>
+              <li><a ui-sref='home'>Home</a></li>
+              <li><a ui-sref='categories'>Categories</a></li>
+              <li><a ui-sref='cart'>Shopping Cart</a></li>
+
+            </ul>
+          </nav>
+        </header>
+
+        <section class='page-content' ui-view></section>
+
+        <footer>
+          <p>Copyright 2016</p>
+        </footer>
+      </main>
+      <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js'></script>
+      <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
+
+      <script src='shared/shopular.module.js'></script>
+      <script src='home/home.controller.js'></script>
+      <script src='category/category.controller.js'></script>
+      <script src='category/categoryItems.controller.js'></script>
+      <script src='category/category.service.js'></script>
+      <script src='item/item.controller.js'></script>
+      <script src='cart/cart.controller.js'></script>
+      <script src='search/search.controller.js'></script>
+
+    </body>
+</html>

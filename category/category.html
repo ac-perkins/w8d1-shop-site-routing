@@ -1,0 +1,8 @@
+<h2>Categories</h2>
+<ul>
+    <li ng-repeat='category in categories.list'>
+        <a ui-sref='categories.itemList({ id: $index })'>{{category.category}}</a>
+    </li>
+</ul>
+
+<aside class='category-item-list' ui-view></aside>
